@@ -1,7 +1,17 @@
-<h1>Web Cam Easy</h1>
+
+<nav class="flex flex-row items-center justify-between">
+ 
+    <h1 class="m-4">Web Cam Easy</h1>
+    <div class="m-4">
+      <input class="mr-2" type="checkbox" id="switchWebCam" (change)="startCamera($event)">
+      <label class="" for="switchWebCam">Video on/off</label>
+    </div>
+  
+</nav>
+
 <div>
   <video id="webcam" autoplay playsinline width="640" height="480"></video>
   <canvas id="canvas" class="d-none"></canvas>
-  <div class="flash"></div>
   <audio id="snapSound" src="audio/snap.wav" preload = "auto"></audio>
 </div>
+<!-- <button class="m-4 border p-2 rounded-lg"  (click)="changeSw()" >OK</button> -->
